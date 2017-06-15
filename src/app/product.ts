@@ -4,4 +4,5 @@ export class Product {
   description: string;
   categoryIds: [number];
   sizes: [string];
+  featuredImage: string;
 }
