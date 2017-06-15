@@ -1,0 +1,29 @@
+{
+  "productData":[
+    {
+      "id": 1,
+      "name": "Mens Shirt",
+      "description": "This is a mens shirt",
+      "categoryIds": [1],
+      "sizes": ["Small", "Medium", "Large"]
+    }, {
+      "id": 2,
+      "name": "Womens Dress",
+      "description": "This is a Womens Dress",
+      "categoryIds": [2],
+      "sizes": ["Small", "Medium", "Large"]
+    }, {
+      "id": 3,
+      "name": "Kids T-shirt",
+      "description": "This is a KidsT-shirt",
+      "categoryIds": [3],
+      "sizes": ["Small", "Medium", "Large"]
+    }, {
+      "id": 4,
+      "name": "Bracelet",
+      "description": "This is a Bracelet",
+      "categoryIds": [4],
+      "sizes": []
+    }
+  ]
+}
