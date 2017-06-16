@@ -2,25 +2,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
+import { HomeModule } from './home/home.module';
+
+import { CategoriesService } from './categories.service';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { CategoriesService } from './categories.service';
-import { ListProductsComponent } from './list-products/list-products.component';
-import { ProductsService } from './products.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ListProductsComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent }
+    ])
   ],
-  providers: [CategoriesService, ProductsService],
+  providers: [CategoriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

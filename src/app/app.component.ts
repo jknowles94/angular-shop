@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'New Season Arrivals';
-  subHeading = 'Check out all the new trends';
+  
 }
