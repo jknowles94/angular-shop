@@ -4,8 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
-// import { ProductsService } from '../products.service';
-import { HomeComponent } from './home/home.component';
+import { ProductsService } from '../products.service';
+import { HomeComponent } from './home.component';
+import { ListProductsComponent } from '../list-products/list-products.component';
 
 @NgModule({
   imports: [
@@ -15,9 +16,10 @@ import { HomeComponent } from './home/home.component';
     RouterModule
   ],
   declarations: [
-  	HomeComponent
+  	HomeComponent,
+    ListProductsComponent
   ],
-  providers: [ ]
+  providers: [ ProductsService ]
 })
 export class HomeModule { 
 	
