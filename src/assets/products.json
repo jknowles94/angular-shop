@@ -3,31 +3,35 @@
     {
       "id": 1,
       "name": "Mens Shirt",
+      "price": 10,
       "description": "This is a mens shirt",
       "categoryIds": [1],
       "sizes": ["Small", "Medium", "Large"],
-      "featuredImage": ""
+      "featuredImage": "./assets/images/product.jpg"
     }, {
       "id": 2,
       "name": "Womens Dress",
+      "price": 25,
       "description": "This is a Womens Dress",
       "categoryIds": [2],
       "sizes": ["Small", "Medium", "Large"],
-      "featuredImage": ""
+      "featuredImage": "./assets/images/product.jpg"
     }, {
       "id": 3,
       "name": "Kids T-shirt",
+      "price": 10,
       "description": "This is a KidsT-shirt",
       "categoryIds": [3],
       "sizes": ["Small", "Medium", "Large"],
-      "featuredImage": ""
+      "featuredImage": "./assets/images/product.jpg"
     }, {
       "id": 4,
       "name": "Bracelet",
+      "price": 15,
       "description": "This is a Bracelet",
       "categoryIds": [4],
       "sizes": [],
-      "featuredImage": ""
+      "featuredImage": "./assets/images/product.jpg"
     }
   ]
 }

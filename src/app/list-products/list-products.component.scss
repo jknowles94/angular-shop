@@ -1,0 +1,19 @@
+@import "../../assets/mixins";
+@import "../../assets/variables";
+
+.list-products {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+
+	.product {
+		border: 4px solid #f7f6f6;
+		width: calc(25% - 20px);
+		padding: 30px;
+
+		img {
+			margin: 0 auto;
+		}
+	}
+	
+}

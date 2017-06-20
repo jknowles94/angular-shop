@@ -1,5 +1,10 @@
 <div class="list-products">
 	<div class="product" *ngFor="let product of products">
-		{{product | json}}
+		<img [src]="product.featuredImage" class="img-responsive"/>
+		<h5>{{product.name}}</h5>
+		<p>{{product.description}}</p>
+		<span>
+			{{product.price | currency:'GBP': true}}
+		</span>
 	</div>
 </div>

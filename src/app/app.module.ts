@@ -4,29 +4,33 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { HomeModule } from './home/home.module';
-
 import { CategoriesService } from './categories.service';
+import { ProductsService } from './products.service';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { CategoryComponent } from './category/category.component';
+import { ListProductsComponent } from './list-products/list-products.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CategoryComponent,
+    ListProductsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    HomeModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent }
+      { path: '', component: HomeComponent },
+      { path: 'category/:id', component: CategoryComponent}
     ])
   ],
-  providers: [CategoriesService],
+  providers: [CategoriesService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

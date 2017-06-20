@@ -17,7 +17,11 @@
 			list-style-type: none;
 			padding: 5px 20px;
 			border-left: 1px solid #333;
-
+			
+			a {
+				cursor: pointer;
+			}
+			
 			&:first-child{
 				border-left: 0;
 			}
